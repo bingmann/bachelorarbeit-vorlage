@@ -232,8 +232,8 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 
 \pagestyle{normal}
 % markiere sections im Seitenkopf links und subsections rechts
-\renewcommand\sectionmark[1]{\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}}
-\renewcommand\subsectionmark[1]{\markright{\MakeUppercase{#1}}}
+\renewcommand\sectionmark[1]{\markboth{\thesection\quad\MakeUppercase{#1}}{\thesection\quad\MakeUppercase{#1}}}
+\renewcommand\subsectionmark[1]{\markright{\thesubsection\quad\MakeUppercase{#1}}}
 
 % Inhaltsverzeichnis
 \tableofcontents
