@@ -129,8 +129,9 @@
     Bachelorarbeit
     \vspace*{2cm}
 
-    {\bf\huge Titel der Bachelorarbeit}
+    {\bf\huge Titel der Bachelorarbeit \\ und wenn er länger ist. \par}
     % Siehe auch oben die Felder pdftitle={}
+    % mit \par am Ende stimmt der Zeilenabstand
 
     \vfill
 
@@ -230,6 +231,9 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \pagestyle{normal}
+% markiere sections im Seitenkopf links und subsections rechts
+\renewcommand\sectionmark[1]{\markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}}
+\renewcommand\subsectionmark[1]{\markright{\MakeUppercase{#1}}}
 
 % Inhaltsverzeichnis
 \tableofcontents
